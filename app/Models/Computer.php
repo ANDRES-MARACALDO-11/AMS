@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Computer extends Model
 {
     //
-    
+    public function Apprentice ()
+    {
+        return $this->hasOne('App\Models\Apprentice');
+    }
 }
